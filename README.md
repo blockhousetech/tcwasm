@@ -1,6 +1,6 @@
 # tcwasm
 
-In this repository, we show how to set up and run tcwasm in TEE. More specifically, we will set up a Google Confidential Computing VM instance, deploy TCWasm analyzer, and run some example test cases. If you are not familiar with TEE or Google Confidential Computing service, please refer to [Confidential Computing  |  Google Cloud](https://cloud.google.com/confidential-computing) for more information.
+In this repository, we show how to set up and run TCWasm in TEE. More specifically, we will set up a Google Confidential Computing VM instance, deploy TCWasm, and run some example test cases. If you are not familiar with TEE or Google Confidential Computing service, please refer to [Confidential Computing  |  Google Cloud](https://cloud.google.com/confidential-computing) for more information.
 
 ### Quick Start
 
@@ -22,7 +22,7 @@ To validate if Confidential Computing service is enabled for our newly created V
 
 For more information, please refer to [Validating instances using Cloud Monitoring | Confidential VM | Google Cloud](https://cloud.google.com/compute/confidential-vm/docs/monitoring).
 
-##### Step 2: Install TCWasm Analyzer
+##### Step 2: Install TCWasm
 
 *Before we start, please make sure that you have followed Step 1 in setting up  a Confidential Computing VM instance, and that you can SSH into the instance. If either is not for you, please refer to [Create a Confidential VM instance in the Cloud console | Google Cloud](https://cloud.google.com/compute/confidential-vm/docs/create-confidential-vm-instance) and [About SSH connections | Compute Engine Documentation | Google Cloud](https://cloud.google.com/compute/docs/instances/ssh) for more information.*
 

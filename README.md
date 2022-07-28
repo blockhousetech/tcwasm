@@ -76,7 +76,7 @@ seraph 1.0.0 # TCWasm version output
 
 *Before we start, please make sure that you have followed Step 2 in installing and testing TCWasm.*
 
-Now we have set up VM instance and installed TCWasm, it's time to try with some simple analysis tasks.
+Now we have set up VM instance and installed TCWasm, it's time to try with some simple test cases.
 
 In TCWasm Docker image, there is an accompanying test file folder (under path `/root/test_files`) with a bunch of sample WASM code files. These files are extracted from repository [GitHub - binji/raw-wasm: Raw WebAssembly demos](https://github.com/binji/raw-wasm), and are meant to demonstrate basic functionalities for TCWasm:
 
@@ -120,7 +120,7 @@ INFO:__main__:All time: 0.519935131072998
 
 Under the hood, TCWasm performs symbolic execution on the WASM code file, builds semantic graph, counts time consumed for each WASM module, and summarizes the total amount of time for the task.
 
-Besides playing with the sample code, you can also try with other WASM code files you can find, e.g., `test.wasm`. Just place your code file under any folder in your host VM, then use the following command to mount that file into Docker container (use the actual code file path) and run analysis task:
+Besides playing with the sample code, you can also try with other WASM code files you can find, e.g., `test.wasm`. Just place your code file under any folder in your host VM, then use the following command to mount that file into Docker container (use the actual code file path) and run:
 
 ```bash
 $ sudo docker run -it -v /path/to/test.wasm:/root/ dockeryangzq12/tcwasm -s test.wasm -wasm -g -p ethereum
